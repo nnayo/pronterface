@@ -1,0 +1,6 @@
+== pronterface for u-delta
+
+this is the pronterface configuration for u-delta 3D printer.
+
+by default, pronterface uses the file ~/.pronsolerc
+so, replace it by a link to the pronsolerc file in this directory

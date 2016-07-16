@@ -1,0 +1,40 @@
+set last_window_maximized True
+set last_window_width 753
+set last_window_height 558
+set port /dev/ttyACM0
+set baudrate 250000
+set temperature_pla 210
+set build_dimensions 120.00x120.00x190.00-55.50-55.50+0.00+0.00+0.00+0.00
+set circular_bed True
+set extruders 1
+set slic3rintegration True
+set mainviz 3D
+set viz3d True
+set tempgauges True
+set last_file_path /home/yog/neptune/TRoll/projects/abahl_2
+set recentfiles ["/home/yog/neptune/TRoll/projects/abahl_2/servo manchon.gcode", "/home/yog/neptune/TRoll/projects/abahl_2/servo manchon.stl", "/home/yog/TRoll/projets/abahl2/casing left nervure 0 part 0 external shape.gcode", "/home/yog/TRoll/projets/abahl2/wedge x 6 90%.gcode", "/home/yog/TRoll/projets/abahl2/casing left nervure 0 part 0.gcode"]
+set monitor True
+set xy_feedrate 300
+set z_feedrate 300
+set bedtemp_pla 0
+set bgcolor #FFFFFF
+set last_temperature 210.0
+macro bas_tour_A G1 X50 Y-25 Z5 F1500
+macro bas_tour_B G1 X0 Y55 Z5 F1500
+macro bas_tour_C G1 X-50 Y-25 Z5 F1500
+macro bas_centre G1 X0 Y0 Z5 F2000
+macro eeprom_content M205
+set uimode Standard
+button 0 "bas_tour_A" bas_tour_A
+button 1 "bas_tour_B" bas_tour_B
+button 2 "bas_tour_C" bas_tour_C
+button 3 "bas_centre" bas_centre
+button 4 "eeprom_content" eeprom_content
+set e_feedrate 100
+set last_extrusion 1
+set rpc_server False
+set last_sash_position 491
+set total_filament_used 15194.8173347
+set slicecommand slic3r $s
+set sliceoptscommand 
+set light3d True
